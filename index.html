@@ -1,0 +1,321 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Артель Мастеров</title>
+  <link rel="stylesheet" href="css/style.css">
+  <link href="https://fonts.googleapis.com/css2?family=Podkova:wght@400;700&display=swap" rel="stylesheet">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+  <script type="text/javascript" src="js/wow.min.js"></script>
+</head>
+<body>
+  <!-- шапка сайта -->
+  <header class="header">
+    <div class="container">
+      <div class="header-top">
+        <a href="#" class="logo">
+          <img class="logo__image" src="img/logo.png" alt="logo:Строительно-монтажная компания" />
+        </a>
+        <form action="#" class="search header__search">
+          <input type="text" class="search__input"
+          placeholder="Что Вас интересует?">
+          <button class="search__button">
+            <svg class="search__button__icon" width="19" height="19">
+              <use xlink:href="img/icons.svg#search"></use>
+            </svg>
+          </button>
+        </form>
+        <div class="contacts">
+          <div class="contacts__phone">
+            <svg class="contacts__phone__icon" width="19" height="19">
+              <use xlink:href="img/icons.svg#phone"></use>
+            </svg>
+            <a class="contacts__phone__link" href="tel:+77777777777">+7 777 777 77 77</a>
+          </div>
+          <div class="contacts__mail">
+            <svg class="contacts__mail__icon" width="19" height="19">
+              <use xlink:href="img/icons.svg#mail"></use>
+            </svg>
+            <a class="contacts__mail__link" href="mailto:artelmasteroff@gmail.com">artelmasteroff@gmail.com</a>
+          </div>
+        </div>
+        <button class="menu-button header-top__menu-button">
+          <span class="menu-button__line"></span>
+          <span class="menu-button__line"></span>
+          <span class="menu-button__line"></span>
+        </button>
+      </div>
+      <nav class="header__menu">
+        <div class="header__menu__dropdown">
+          <button class="header__menu__dropdown__dropbutton">
+            Услуги
+            <svg class="header__menu__dropdown__dropbutton__icon" width="14" height="8">
+              <use xlink:href="img/icons.svg#showmore"></use>
+            </svg>
+          </button>
+          <div class="header__menu__dropdown__content">
+            <a href="#">Строительство домов</a>
+            <a href="#">Возведение заборов</a>
+            <a href="#">Строительство бань</a>
+            <a href="#">Монтаж кровли</a>
+            <a href="#">Строительство гаражей</a>
+            <a href="#">Установка ворот</a>
+            <a href="#">Строительство фундамента</a>
+            <a href="#">Проектирование и дизайн</a>
+          </div>
+        </div>
+        <a href="#home">О компании</a>
+        <a href="#galery">Галерея</a>
+        <a href="#contacts">Контакты</a>
+        <a href="#reviews">Отзывы</a>
+        <a href="#reviews">Статьи</a>
+      </nav>
+      <div class="header__description">
+        <h1 class="header__description__title">Строительно-монтажные <br>работы в СПб и ЛО
+        </h1>
+        <ul class="header__description__list">
+          <li>Загородное строительство
+            <svg class="header__description__list__icon" width="14" height="8">
+              <use xlink:href="img/icons.svg#check"></use>
+            </svg>
+          </li>
+          <li>Облагораживание территории
+            <svg class="header__description__list__icon" width="14" height="8">
+              <use xlink:href="img/icons.svg#check"></use>
+            </svg>
+          </li>
+          <li>Электромонтажные работы
+            <svg class="header__description__list__icon" width="14" height="8">
+              <use xlink:href="img/icons.svg#check"></use>
+            </svg>
+          </li>
+          <li>Сантехнические работы
+            <svg class="header__description__list__icon" width="14" height="8">
+              <use xlink:href="img/icons.svg#check"></use>
+            </svg>
+          </li>
+          <li>Отделка помещений
+            <svg class="header__description__list__icon" width="14" height="8">
+              <use xlink:href="img/icons.svg#check"></use>
+            </svg>
+          </li>
+        </ul>
+        <button data-toggle="modal" class="header__description__button" type="submit">Заказать звонок
+        </button>
+      </div>
+      <div class="header__statistics">
+        <div class="header__statistics__card">
+          <span class="header__statistics__card__text">работаем с</span>
+          <span class="header__statistics__card__number">2014</span>
+          <span class="header__statistics__card__text">года</span>
+        </div>
+        <div class="header__statistics__card">
+          <span class="header__statistics__card__number">18</span>
+          <span class="header__statistics__card__text">опытных <br />бригад</span>
+        </div>
+        <div class="header__statistics__card">
+          <span class="header__statistics__card__number">475</span>
+          <span class="header__statistics__card__text">построенных <br />объектов</span>
+        </div>
+        <div class="header__statistics__card">
+          <span class="header__statistics__card__number">98%</span>
+          <span class="header__statistics__card__text">положительных <br />отзывов</span>
+        </div>
+      </div>
+    </div>
+  </header>
+  <!-- центральный блок -->
+  <section class="central-box">
+    <div class="company">
+      <h2 class="title">О компании</h2>
+      <hr class="title-line">
+      <div class="company-box">
+        <div class="company-box__textbox">
+          <p>"Артель Мастеров" начал свой путь в 2014 году, как электромонтажная компания. С тех пор наши специалисты исправно
+            трудятся на благо клиентов. Однако, во время выполнения поставленных задач мы сталкивались с тем, что качественный
+            электромонтаж предполагает качественные отделочные работы, а установка дорогостоящего оборудования требует
+            вмешательства в другие системы.</p>
+          <p>Мы не могли полагаться на недобросовестных подрядчиков, так как дорожим своей репутацией, поэтому наша команда
+            пополнилась специалистами из сфер строительства, геодезии, дизайна, агропромышленности, сантехники, автоматики и
+            многих
+            других.</p>
+          <p>Теперь мы с гордостью можем заявить, что способны предоставить любую услугу "под ключ" - от постройки современного
+            функционального дома до озеленения территории.</p>
+          <div class="company-box__textbox__buttonbox">
+            <button class="company-box__textbox__buttonbox__button">
+              <a href="#">Подробнее</a>
+            </button>
+          </div>
+        </div>
+        <div class="company-box__imagebox">
+          <img src="img/img_index/electrician.jpg" alt="image:electrician" class="company-box__imagebox__image">
+        </div>
+      </div>
+    </div>
+    <div class="service">
+      <h2 class="title">Услуги</h2>
+      <hr class="title-line">
+      <div class="service__box">
+        <div class="service__box__card">
+          <a href="#" class="service__box__card__link">
+            <img class="service__box__card__link__img" src="img/img_index/housebuild.jpg" alt="Строительство домов"/>
+            <div class="service__box__card__link__title">
+              <span class="service__box__card__link__title__text">Строительство зданий</span>
+            </div>
+          </a>
+        </div>
+        <div class="service__box__card">
+          <a href="#" class="service__box__card__link">
+            <img class="service__box__card__link__img" src="img/img_index/goatbuilding.jpg" alt="Установка ворот и заборов"/>
+            <div class="service__box__card__link__title">
+              <span class="service__box__card__link__title__text">Установка ворот и заборов</span>
+            </div>
+          </a>
+        </div>
+        <div class="service__box__card">
+          <a href="#" class="service__box__card__link">
+            <img class="service__box__card__link__img" src="img/img_index/roofbuilding.jpg" alt="Кровельные работы"/>
+            <div class="service__box__card__link__title">
+              <span class="service__box__card__link__title__text">Кровельные работы</span>
+            </div>
+          </a>
+        </div>
+        <div class="service__box__card">
+          <a href="#" class="service__box__card__link">
+            <img class="service__box__card__link__img" src="img/img_index/design.jpg" alt="Дизайн и проектирование"/>
+            <div class="service__box__card__link__title">
+              <span class="service__box__card__link__title__text">Дизайн и проектирование</span>
+            </div>
+          </a>
+        </div>
+        <div class="service__box__card">
+          <a href="#" class="service__box__card__link">
+            <img class="service__box__card__link__img" src="img/img_index/housebuild.jpg" alt="Сантехнические работы" />
+            <div class="service__box__card__link__title">
+              <span class="service__box__card__link__title__text">Сантехнические работы</span>
+            </div>
+          </a>
+        </div>
+        <div class="service__box__card">
+          <a href="#" class="service__box__card__link">
+            <img class="service__box__card__link__img" src="img/img_index/goatbuilding.jpg" alt="Облагораживание территории" />
+            <div class="service__box__card__link__title">
+              <span class="service__box__card__link__title__text">Облагораживание территории</span>
+            </div>
+          </a>
+        </div>
+        <div class="service__box__card">
+          <a href="#" class="service__box__card__link">
+            <img class="service__box__card__link__img" src="img/img_index/roofbuilding.jpg" alt="Отделка помещений" />
+            <div class="service__box__card__link__title">
+              <span class="service__box__card__link__title__text">Отделка помещений</span>
+            </div>
+          </a>
+        </div>
+        <div class="service__box__card">
+          <a href="#" class="service__box__card__link">
+            <img class="service__box__card__link__img" src="img/img_index/design.jpg" alt="Ещё что-нибудь, я хз" />
+            <div class="service__box__card__link__title">
+              <span class="service__box__card__link__title__text">Работы по электромонтажу</span>
+            </div>
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
+  <section class="wrapper">
+    <div class="form">
+      <form action="send.php" method="POST" id="form" class="form__body">
+        <h2 class="title">Заказать звонок</h2>
+        <hr class="title-line">
+        <div class="form__item">
+          <label for="formName" class="form__label">Имя*</label>
+          <input id="formName" type="text" name="name" class="form__input _reg">
+        </div>
+        <div class="form__item">
+          <label for="formPhone" class="form__label">Номер телефона*</label>
+          <input id="formPhone" type="text" name="phone" class="form__input _reg _phone">
+        </div>
+        <div class="form__item">
+          <label for="formEmail" class="form__label">Почта</label>
+          <input id="formEmail" type="text" name="email" class="form__input">
+        </div>
+        <div class="form__item">
+          <div class="form__label">
+            Физик или юрик?
+          </div>
+          <div class="options">
+            <div class="options__item">
+              <input id="formRightHanded" checked type="radio" value="right" name="hand" class="options__input">
+              <label for="formRightHanded" class="options__label"><span>Физик</span></label>
+            </div>
+            <div class="options__item">
+              <input id="formLeftHanded" type="radio" value="left" name="hand" class="options__input">
+              <label for="formLeftHanded" class="options__label"><span>Юрик</span></label>
+            </div>
+          </div>
+        </div>
+        <div class="form__item">
+          <label for="formMessage" class="form__label">Сообщение</label>
+          <textarea name="message" id="formMessage" class="form__input"></textarea>
+        </div>
+        <div class="form__item">
+          <div class="form__label">Что Вас интересует?</div>
+          <select name="age" class="select">
+            <option value="от 18 до 25" selected>Стройка</option>
+            <option value="от 25 до 45" selected>Электрика</option>
+            <option value="от 45 до 100" selected>Сантхника</option>
+          </select>
+        </div>
+        <div class="form__item">
+          <div class="form__label">Прикрепить Файлы</div>
+          <div class="file">
+            <div class="file__item">
+              <input id="formImage" accept=".jpeg, .rar, .zip, .jpg, .png, .gif, .doc, .docx, .txt, .xls, .vsd, .pdf" type="file" name="image" class="file__input">
+              <div class="file__button">Выбрать</div>
+            </div>
+            <div id="formPreview" class="file__preview"></div>
+          </div>
+        </div>
+        <div class="form__item">
+          <div class="checkbox">
+            <input id="formAgreement" checked type="checkbox" name="agreement" class="checkbox__input _reg">
+            <label for="formAgreement" class="checkbox__label"><span>Я даю своё согласие на обработку персональных данных в соответствии с <a href="">Условиями</a>*</span></label>
+          </div>
+        </div>
+        <button type="submit" class="form__button">Отправить</button>
+      </form>
+    </div>
+  </section>
+  <!-- Подвал -->
+  <footer class="footer">
+
+  </footer>
+  <!-- блок модального окна -->
+  <!-- <div class="modal">
+    <div class="modal__overlay"></div>
+    <div class="modal__dialog">
+      <a href="#" class="modal__close">
+        <img src="img/modal-close.png" alt="закрыть" class="img__close">
+      </a>
+      <h3>Оставьте зявку и наш специалист перезвонит Вам в ближайшее время</h3>
+      <form action="send.php" method="POST" class="order__date-user">
+        <input type="text" name="name" class="input order__date-user__input" placeholder="Ваше имя*" required />
+        <input type="text" name="phone" class="input order__date-user__input" placeholder="Ваш номер телефона*" required />
+        <textarea name="message" cols="30" rows="10" placeholder="Что Вас интересует?"
+          class="message order__date-user__message"></textarea>
+        <div class="order__date-user__buttonbox">
+          <button class="order__date-user__buttonbox__button" type="submit">
+            Заказать звонок
+          </button>
+        </div>
+      </form>
+    </div>
+  </div> -->
+  <script src="js/jquery-3.6.0.min.js"></script>
+  <script src="js/main.js"></script>
+  <script src="js/script.js"></script>
+</body>
+</html>
